@@ -1,0 +1,162 @@
+.check-speed-container {
+    margin-top: 50px;
+
+    @media (min-width:1024px) {
+        margin-top: 80px;
+    }
+
+    @media (min-width:1440px) {
+        margin-top: 150px;
+    }
+
+    @media (min-width:1920px) {
+        margin-top: 249px;
+    }
+
+}
+
+.speed-heading {
+    @include large-heading($black);
+    @media (min-width:1024px) {
+        margin-top: 80px;
+    }
+}
+
+.speed-form-content {
+    @media (min-width:768px) {
+        margin-left: 35px;
+    }
+
+    @media (min-width:1440px) {
+        margin-left: 118px;
+    }
+
+    @media (min-width:1920px) {
+        margin-left: 178px;
+    }
+}
+
+.speed-subheading {
+    color: $purple;
+
+    @media (min-width:1024px) {
+        font-size: 36px;
+    }
+
+    @media (min-width:1440px) {
+        font-size: 48px;
+    }
+
+    @media (min-width:1920px) {
+        font-size: 55px;
+    }
+}
+
+.speed-content {
+    color: $grey;
+
+    @media (min-width:1440px) {
+        width: 86%;
+        font-size: 17px;
+        margin-top: 14px;
+        margin-bottom: 42px;
+    }
+
+    @media (min-width:1920px) {
+        width: 84%;
+        margin-top: 16px;
+        margin-bottom: 44px;
+    }
+}
+
+.speed-img {
+    width: 315px;
+
+    @media (min-width:768px) {
+        width: 350px;
+    }
+
+    @media (min-width:1024px) {
+        width: 450px;
+    }
+
+    @media (min-width:1440px) {
+        width: 600px;
+        margin-right: 5%;
+    }
+
+    @media (min-width:1920px) {
+        width: 794px;
+        margin-right: 10%;
+    }
+}
+
+.speed-button {
+    background-color: $yellow;
+    color: $black;
+    border: none;
+    padding: 8px 16px;
+
+    &:hover {
+        color: $white;
+        box-shadow: none;
+        outline: none;
+    }
+
+    @media (min-width:1024px) {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+
+    @media (min-width:1440px) {
+        padding: 10px;
+        width: 100px;
+        margin-top: 0px;
+    }
+
+    @media (min-width:1920px) {
+        width: 114px;
+        margin-left: 36px;
+        padding: 14px;
+        margin-top: -1px;
+    }
+
+}
+
+.webUrl-input,
+.email-input {
+    padding: 8px;
+    width: 88%;
+    background-color: #F2F2F2;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        color: #B6B6B6;
+    }
+
+    @media (min-width:768px) {
+        width: 60%;
+    }
+
+    @media (min-width:1024px) {
+        width: 35%;
+        padding: 8px;
+    }
+
+    @media (min-width:1440px) {
+        padding: 10px;
+    }
+
+    @media (min-width:1920px) {
+        width: 38%;
+        padding: 14px;
+    }
+}
+
+.email-input {
+    border: none;
+    border-left: 1px solid #DFDFDF;
+}

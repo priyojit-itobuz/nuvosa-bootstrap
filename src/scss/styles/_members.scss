@@ -1,0 +1,82 @@
+.members-container {
+    margin-top: 50px;
+}
+
+.members-heading {
+    width: 94%;
+    @include large-heading($black);
+}
+
+.members-area {
+    color: $purple;
+}
+
+.members-content {
+    margin-left: 6%;
+    color: $grey;
+
+    @media (min-width:1024px) {
+        width: 45%;
+        margin-left: 0%;
+    }
+    @media (min-width:1920px) {
+        width: 34%;
+    }
+}
+
+.member-role {
+    color: #A3A2A2;
+    font-size: 15px;
+}
+
+.member-name {
+    color: $black;
+    &:hover {
+        color: $purple;
+    }
+    
+    @media (min-width:1440px) {
+        font-size: 22px;
+    }
+}
+
+.member-img {
+    width: 120px;
+
+    @media (min-width:1024px) {
+        width: 131px;
+    }
+}
+
+.member-card {
+    width: 18rem;
+    border: 1px solid #EFEFEF !important;
+    transition: transform .3s;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        transform: scale(1.06);
+    }
+}
+
+.member-socials {
+    cursor: pointer;
+    &:hover {
+        filter: invert(53%) sepia(66%) saturate(4352%) hue-rotate(217deg) brightness(100%) contrast(89%);
+    }
+}
+
+.member-rectangle {
+    @include topLeft-position(-4%,78%);
+
+    @media (min-width:768px) {
+        @include topLeft-position(-8%,10%);
+    }
+    @media (min-width:1440px) {
+        @include topLeft-position(-12%,19%);
+    }
+    @media (min-width:1920px) {
+        left: 24%;
+    }
+}

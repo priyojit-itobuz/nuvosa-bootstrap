@@ -1,0 +1,227 @@
+.optimise-container {
+    margin-left: 15px;
+    margin-top: 80px;
+
+
+    @media (min-width:375px) {
+        margin-left: 44px;
+    }
+
+    @media (min-width:768px) {
+        margin-top: 120px;
+        margin-left: 35px;
+    }
+
+    @media (min-width:1024px) {
+        margin-left: 72px;
+    }
+
+    @media (min-width:1440px) {
+        margin-top: 151px;
+    }
+
+    @media (min-width:1920px) {
+        margin-left: 112px;
+    }
+}
+
+.optimise-heading {
+    @include heading($black);
+}
+
+.optimise-heading-website {
+    @include heading($purple);
+}
+
+.optimise-content {
+    color: $dark-grey;
+    width: 81%;
+
+    @media (min-width:768px) {
+        width: 65%;
+    }
+
+    @media (min-width:1024px) {
+        width: 54%;
+    }
+
+    @media (min-width:1440px) {
+        font-size: 20px;
+        width: 48%;
+    }
+    @media (min-width:1920px) {
+        width: 45%;
+    }
+
+}
+
+.optimise-cards {
+    @media (min-width:768px) {
+        margin-left: 7%;
+    }
+
+    @media (min-width:1024px) {
+        margin-left: 17%;
+    }
+
+    @media (min-width:1024px) {
+        margin-left: 0%;
+    }
+
+    @media(min-width: 1920px) {
+        margin-right: 112px
+    }
+}
+
+.optimise-card-img {
+    width: 60px;
+
+    @media (min-width:1440px) {
+        width: 80px;
+        margin: 50px 210px 85px 30px;
+    }
+
+    @media (min-width:1920px) {
+        width: 87px;
+        margin: 56px 279px 91px 34px;
+    }
+}
+
+.optimise-card-heading {
+    font-size: 20px;
+    z-index: 1;
+
+    @media (min-width:1440px) {
+        font-size: 24px;
+        margin: 0px 130px 21px 30px;
+        width: 96%;
+    }
+
+    @media (min-width:1920px) {
+        margin: 0px 142px 21px 34px;
+    }
+}
+
+.optimise-card-content {
+    color: $grey;
+
+    @media (min-width:1440px) {
+        font-size: 17px;
+        margin: 0px 38px 80px 30px;
+    }
+
+    @media (min-width:1920px) {
+        margin: 0px 44px 92px 34px;
+    }
+}
+
+.keyword_background {
+    color: $light-white;
+    font-size: 140px;
+    @include topLeft-position(-10%,58%);
+
+    @media (min-width:1440px) {
+        font-size: 229px;
+        @include topLeft-position(6%,56%);
+    }
+
+    @media (min-width:1920px) {
+        @include topLeft-position(10%,55%);
+    }
+}
+
+.content_background {
+    color: $light-white;
+    font-size: 140px;
+    @include topLeft-position(-14%,48%);
+
+    @media (min-width:1440px) {
+        font-size: 229px;
+        top: 6%;
+    }
+
+    @media (min-width:1920px) {
+        top: 9%;
+    }
+}
+
+.target_background {
+    color: $light-white;
+    font-size: 140px;
+    @include topLeft-position(-11%,51%);
+
+    @media (min-width:1440px) {
+        font-size: 229px;
+        @include topLeft-position(7%,52%);
+    }
+
+    @media (min-width:1920px) {
+        @include topLeft-position(10%,50%);
+    }
+}
+
+.testing_background {
+    color: $light-white;
+    font-size: 140px;
+    @include topLeft-position(-13%,51%);
+
+    @media (min-width:1440px) {
+        font-size: 229px;
+        @include topLeft-position(6%,47%);
+    }
+
+    @media (min-width:1920px) {
+        @include topLeft-position(9%,45%);
+    }
+}
+
+
+.optimise-card {
+    width: 88%;
+    transition: transform .3s;
+    cursor: pointer;
+    background: transparent;
+
+    &:hover {
+        z-index: 4 !important;
+        background-color: $white;
+        transform: scale(1.06);
+        border-bottom: 2px solid $dark-purple !important;
+    }
+
+    @media (min-width:768px) {
+        width: 18rem;
+    }
+
+    @media (min-width:1440px) {
+        width: 300px;
+    }
+
+    @media (min-width:1920px) {
+        width: 400px;
+    }
+}
+
+.optimise-ellipse {
+    width: 300px;
+    @include topLeft-position(79%,-16%);
+    z-index: 1;
+
+    @media (min-width:768px) {
+        @include topLeft-position(63%,38%);
+    }
+
+    @media (min-width:1024px) {
+        @include topLeft-position(61%,43%);
+    }
+
+    @media (min-width:1440px) {
+        width: 550px;
+        @include topLeft-position(36%,58%);
+    }
+
+    @media (min-width:1920px) {
+        width: 619px;
+        @include topLeft-position(40%,63%);
+    }
+}

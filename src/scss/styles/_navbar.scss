@@ -1,0 +1,123 @@
+// Navbar
+.nav-search-button {
+    background-color: $yellow;
+    border: none;
+    padding: 6%;
+
+    @media (min-width:1920px) {
+        width: 83px;
+        font-size: 24px;
+    }
+}
+
+.nav-logo {
+    @media (min-width:768px) {
+        margin-left: 26px;
+    }
+
+    @media (min-width:1024px) {
+        margin-left: 40px;
+    }
+
+    @media (min-width:1440px) {
+        margin-left: 72px;
+    }
+
+    @media (min-width:1920px) {
+        margin-left: 112px;
+    }
+}
+
+.nav-logo-design {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $maroon;
+    margin-bottom: 5px;
+
+    @media (min-width:1920px) {
+        width: 11px;
+        height: 11px;
+    }
+}
+
+.nav-heading {
+    @media (min-width:1920px) {
+        font-size: 40px;
+    }
+}
+
+.nav-item-links {
+    gap: 4%;
+
+    @media (min-width:1920px) {
+        gap: 10%;
+    }
+}
+
+.nav-item a {
+    @media (min-width:1440px) {
+        font-size: 20px;
+    }
+
+    @media (min-width:1920px) {
+        font-size: 24px;
+    }
+}
+
+.hover-underline-animation {
+    &::before {
+        content: "";
+        position: absolute;
+        background: $purple;
+        bottom: 0;
+        left: 0;
+        border-radius: 2px;
+        width: 0;
+        height: 2.5px;
+        transition: all 0.3s ease-in-out 0.3s;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: $purple;
+        bottom: 0;
+        right: 0;
+        border-radius: 2px;
+        width: 0;
+        height: 2.5px;
+        transition: all 0.3s ease-in-out 0.3s;
+    }
+
+    @media (min-width:1024px) {
+        &:hover::before {
+            width: 73%;
+        }
+
+        &:hover::after {
+            width: 20%;
+        }
+    }
+}
+
+.nav-talk-button {
+    @media (min-width:1440px) {
+        width: 150px;
+        padding: 14px !important;
+    }
+
+    @media (min-width:1920px) {
+        width: 204px;
+        padding: 20px !important;
+        font-size: 24px !important;
+    }
+}
+
+.nav-search-img {
+    width: 15px;
+
+    @media (min-width:1440px) {
+        width: 30px;
+    }
+}

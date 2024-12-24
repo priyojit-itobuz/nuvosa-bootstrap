@@ -1,0 +1,120 @@
+.client-section {
+    margin-top: 50px;
+
+    @media (min-width:1440px) {
+        margin-top: 150px;
+    }
+
+    @media (min-width:1920px) {
+        margin-top: 170px;
+    }
+}
+
+.client-small-card {
+    width: 90%;
+    transition: transform .3s;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.06);
+    }
+}
+
+.client-small-review {
+    width: 100%;
+    color: $grey;
+    position: relative;
+}
+
+.client-heading {
+    @include large-heading($black);
+}
+
+.client-text {
+    color: $grey;
+
+    @media (min-width:768px) {
+        width: 45%;
+    }
+
+    @media (min-width:1440px) {
+        font-size: 17px;
+        width: 30%;
+    }
+
+    @media (min-width:1920px) {
+        width: 27%;
+    }
+}
+
+.client-card {
+    width: 100% !important;
+    display: flex;
+    transition: transform .3s;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.06);
+    }
+
+    @media (min-width:758px) {
+        width: 250px !important;
+    }
+
+    @media (min-width:1024px) {
+        width: 335px !important;
+    }
+
+    @media (min-width:1440px) {
+        width: 29rem !important;
+    }
+
+    @media (min-width:1920px) {
+        width: 570px !important;
+    }
+}
+
+.client-img {
+    width: 50px !important;
+}
+
+.client-review {
+    color: $grey;
+    position: relative;
+    width: 74%;
+
+    @media (min-width:768px) {
+        width: 100%;
+    }
+
+    @media (min-width:1920px) {
+        font-size: 17px;
+        width: 90%;
+    }
+}
+
+.client-name {
+    color: $black;
+    font-size: 12px;
+}
+
+.client-role {
+    color: $grey;
+    font-size: 12px;
+}
+
+.client-quotes-img {
+    @include topLeft-position(9%,4%);
+}
+
+#owl-demo .item {
+    margin: 10px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.owl-carousel .owl-item img {
+    display: flex;
+    gap: 10px;
+    width: 20%;
+}

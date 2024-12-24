@@ -1,0 +1,111 @@
+.services-container {
+    margin-top: 80px;
+
+    @media (min-width:768px) {
+        margin-top: 120px;
+    }
+
+    @media (min-width:1024px) {
+        margin-top: 140px;
+    }
+
+    @media (min-width:1440px) {
+        margin-top: 151px;
+    }
+}
+
+.services-cards {
+    gap: 10px;
+
+    @media (min-width:768px) {
+        gap: 20px;
+    }
+
+    @media (min-width:1440px) {
+        gap: 30px;
+    }
+
+    @media (min-width:1920px) {
+        gap: 81px;
+    }
+}
+
+.service-card {
+    width: 88%;
+    cursor: pointer;
+    @include hoverEffect(rgba(149, 157, 165, 0.2) 0px 8px 24px,transform .3s);
+
+    &:hover {
+        transform: scale(1.06);
+    }
+
+    @media (min-width:1024px) {
+        width: 350px;
+    }
+
+    @media (min-width:1440px) {
+        width: 410px;
+    }
+
+    @media (min-width:1920px) {
+        width: 513px;
+    }
+}
+
+.card-body-content {
+    @media (min-width:1440px) {
+        margin: 10px 5px 10px 5px;
+    }
+
+    @media (min-width:1920px) {
+        margin: 10px 10px 10px 10px;
+    }
+}
+
+
+.socials {
+    width: 60px;
+
+    @media (min-width:1440px) {
+        width: 120px
+    }
+
+    @media (min-width:1920px) {
+        width: 129px;
+    }
+}
+
+.services-heading {
+    color: $black;
+    font-weight: 300;
+
+    @media (min-width:1440px) {
+        font-size: 34px;
+    }
+
+    @media (min-width:1920px) {
+        width: 56%;
+        font-size: 38px;
+        line-height: 1.5;
+    }
+}
+
+.services-content {
+    color: $grey;
+    font-weight: 300;
+
+    @media (min-width:1440px) {
+        font-size: 17px;
+    }
+}
+
+.service-button {
+    width: 20px;
+    cursor: pointer;
+    background: none;
+    outline: none;
+
+    @media (min-width:1440px) {
+        width: 24px;
+    }
+}

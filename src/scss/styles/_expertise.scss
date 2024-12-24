@@ -1,0 +1,124 @@
+.expertise-container {
+    margin-top: 50px;
+    gap: 10px;
+
+    @media (min-width:768px) {
+        gap: 20px;
+    }
+
+    @media (min-width:1024px) {
+        margin-top: 70px;
+    }
+
+    @media (min-width:1440px) {
+        margin-top: 80px;
+        gap: 50px;
+    }
+
+    @media (min-width:1920px) {
+        margin-top: 80px;
+        gap: 75px;
+    }
+}
+
+.expertise-card {
+    width: 88%;
+    transition: transform .3s;
+    cursor: pointer;
+    
+    &:hover {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        transform: scale(1.02);
+    }
+
+    @media (min-width:1440px) {
+        width: 19rem;
+    }
+
+    @media (min-width:1920px) {
+        width: 370px;
+    }
+}
+
+.expertise-icons {
+    width: 60px;
+    margin: 0px 0px 15px 0px;
+
+    @media (min-width:1440px) {
+        margin: 15px 263px 21px 15px;
+    }
+
+    @media (min-width:1920px) {
+        margin: 34px 269px 22px 20px;
+    }
+}
+
+.expertise-card-heading {
+
+    @media (min-width:1440px) {
+        font-size: 22px;
+        margin: 0px 116px 10px 15px;
+        width: 82%;
+    }
+
+    @media (min-width:1920px) {
+        margin: 0px 123px 17px 20px;
+        width: 64%;
+    }
+}
+
+.expertise-content {
+    color: $grey;
+
+    @media (min-width:1440px) {
+        margin: 0px 40px 10px 15px;
+    }
+
+    @media (min-width:1920px) {
+        margin: 0px 48px 11px 20px;
+    }
+}
+
+.expertise-links {
+    color: $purple;
+
+    @media (min-width:1440px) {
+        margin: 0px 158px 20px 15px;
+    }
+
+    @media (min-width:1920px) {
+        margin: 0px 220px 26px 20px;
+    }
+}
+
+.expertise-ellipse {
+    @include topLeft-position(1%,78%);
+
+    @media (min-width:768px) {
+        left: 43%;
+    }
+
+    @media (min-width:1024px) {
+        left: 28%;
+    }
+
+    @media (min-width:1440px) {
+        @include topLeft-position(-1%,35%);
+    }
+}
+
+.expertise-rectangle-blue {
+    @include topLeft-position(64%,86%);
+
+    @media (min-width:768px) {
+        left: 88%;
+    }
+
+    @media (min-width:1024px) {
+        @include topLeft-position(-22%,94%);
+    }
+
+    @media (min-width:1440px) {
+        @include topLeft-position(-18%,89%);
+    }
+}

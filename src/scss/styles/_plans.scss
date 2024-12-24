@@ -1,0 +1,164 @@
+.plans-container {
+    margin-top: 50px;
+    background-color: $light-white;
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    @media (min-width: 1440px) {
+        padding-top: 53px;
+        padding-bottom: 66px;
+    }
+    @media (min-width:1920px) {
+        padding-bottom: 95px;
+    }
+}
+
+.plans-heading {
+    @include large-heading($black);
+}
+
+.plans-text {
+    color: $grey;
+
+    @media (min-width:1440px) {
+        margin-bottom: 60px;
+    }
+
+    @media (min-width:1920px) {
+        margin-bottom: 86px;
+    }
+}
+
+.plan-currency {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 26px;
+
+    @media (min-width:1440px) {
+        font-size: 49px;
+    }
+
+    @media (min-width:1920px) {
+        margin-top: 34px;
+        margin-bottom: 28px;
+    }
+}
+
+.plan-card {
+    width: 88%;
+    transition: transform .3s;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 10px;
+
+    &:hover {
+        cursor: pointer;
+        background: url(/src/images/content/plans/plansBg.png) no-repeat center center;
+        transform: scale(1.06);
+    }
+
+    &:hover *:not(button) {
+        color: $white;
+    } 
+    
+    &:hover button {
+        background-color: $yellow;
+        color: $black;
+        border: 1px solid $yellow;
+        outline: none;
+    }
+
+    @media (min-width:768px) {
+        width: 20rem;
+    }
+
+    @media (min-width:1920px) {
+        width: 372px;
+    }
+}
+
+
+.plan-type {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: $purple;
+
+    @media (min-width:1440px) {
+        margin-top: 60px;
+        margin-bottom: 34px;
+    }
+
+    @media (min-width:1920px) {
+        font-size: 22px;
+        margin-top: 65px;
+    }
+}
+
+.plan-currency-type {
+    font-size: 16px;
+
+    @media (min-width:1440px) {
+        margin-bottom: 20px;
+        top: -1.5rem;
+    }
+}
+
+.plan-month {
+    font-size: 15px;
+}
+
+.plan-benefit {
+    margin-bottom: 10px;
+    color: $grey;
+
+    @media (min-width: 1920px) {
+        font-size: 17px;
+    }
+
+}
+
+.plan-button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid black;
+    padding: 10px 10px;
+
+    @media (min-width:1440px) {
+        margin-top: 38px;
+        margin-bottom: 60px;
+        width: 126px;
+        padding: 10px 20px;
+    }
+
+    @media (min-width:1920px) {
+        margin-top: 42px;
+        margin-bottom: 50px;
+    }
+}
+
+.plans-pinkEllipse {
+    @include topLeft-position(98%,15%);
+
+    @media (min-width:768px) {
+        @include topLeft-position(90%,80%);
+    }
+
+    @media (min-width:1024px) {
+        top: 95%;
+    }
+
+    @media (min-width:1440px) {
+        @include topLeft-position(90%,91%);
+    }
+}
+
+.plans-rectangle {
+    @include topLeft-position(-1%,4%);
+
+    @media (min-width:1440px) {
+        top: 20%;
+    }
+}

@@ -1,0 +1,97 @@
+.stats-container {
+    margin-top: 50px;
+
+    @media (min-width:1440px) {
+        margin-top: 97px;
+    }
+}
+
+.stats-cards {
+    width: 19rem;
+    border: 1px solid #E1E1E1;
+    border-radius: 2%;
+    padding-top: 21px;
+    gap: 20px;
+
+    @media (min-width:768px) {
+        width: 680px;
+        padding: 30px 30px 12px 30px;
+    }
+
+    @media (min-width:1024px) {
+        width: 800px;
+        gap: 40px;
+    }
+
+    @media (min-width:1440px) {
+        width: 1050px;
+        gap: 60px;
+    }
+
+    @media (min-width:1920px) {
+        width: 1165px;
+    }
+}
+
+.stat-number {
+    color: #666565;
+
+    @media (min-width:768px) {
+        font-size: 36px;
+    }
+
+    @media (min-width:1440px) {
+        font-size: 60px;
+    }
+
+    @media (min-width:1920px) {
+        font-size: 73px;
+    }
+}
+
+.stat-content {
+    color: #6F6F6F;
+    font-size: 14px;
+
+    @media (min-width:1024px) {
+        width: 160%;
+    }
+
+    @media (min-width:1440px) {
+        font-size: 17px;
+        width: 180%;
+    }
+
+    @media (min-width:1920px) {
+        width: 183%;
+    }
+}
+
+.stat-awards-experience {
+    gap: 14px;
+
+    @media (min-width:768px) {
+        gap: 2.5rem;
+    }
+
+    @media (min-width:1440px) {
+        gap: 60px;
+    }
+
+}
+
+.stat-client-projects {
+    gap: 3rem;
+
+    @media (min-width:768px) {
+        gap: 5rem;
+    }
+
+    @media (min-width:1440px) {
+        gap: 60px;
+    }
+
+    @media (min-width:1920px) {
+        gap: 50px;
+    }
+}

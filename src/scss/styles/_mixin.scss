@@ -1,0 +1,54 @@
+@mixin topLeft-position($t,$l) {
+    top: $t;
+    left: $l;
+}
+
+@mixin bottomLeft-position($b,$l) {
+    bottom: $b;
+    left: $l;
+}
+
+@mixin hoverEffect($shadow,$transition) {
+    box-shadow: $shadow;
+    transition: $transition;
+    cursor: pointer;
+}
+
+@mixin heading($color) {
+    color: $color;
+    
+    @media (min-width:768px) {
+        font-size: 24px;
+    }
+    @media (min-width:1024px) {
+        font-size: 36px;
+    }
+
+    @media (min-width:1440px) {
+        font-size: 48px;
+    }
+
+    @media (min-width:1920px) {
+        font-size: 50px;
+    }
+}
+
+@mixin large-heading($color) {
+    color: $color;
+
+    @media (min-width:768px) {
+        font-size: 24px;
+    }
+    @media (min-width: 1024px) {
+        font-size: 36px;
+    }
+
+    @media (min-width: 1440px) {
+        font-size: 48px;
+    }
+
+    @media (min-width: 1920px) {
+        font-size: 55px;
+    }
+}
+
